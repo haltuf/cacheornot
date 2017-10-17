@@ -1,10 +1,10 @@
-﻿<?php
+<?php
 
 function cacheornot_action() {
 	global $cache_cacheornot, $cache_enabled;
 
 	if($cache_cacheornot == '1') {
-		
+
 		if($condition) {	// podmínka, za které se nemá kešovat
 			define( 'DONOTCACHEPAGE', 1 );
 			$cache_enabled = 0;
